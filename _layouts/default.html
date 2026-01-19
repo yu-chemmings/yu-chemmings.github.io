@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Yu Chemmings' World >> {{ page.url }}</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<base target="_top" href="{{ site.url }}" />
+<style>
+  header, footer {
+    text-align: center;
+  }
+  article {
+    max-width: 1000px;
+    margin: 10px auto;
+    box-shadow: 4px 4px 0px #aaa;
+    border: 1px solid #bbb;
+    padding: 20px;
+  }
+  pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+  a:link {
+    color:#00f;
+    text-decoration-color: #bbb;
+  }
+  a:visited {
+    color:#00f;
+    text-decoration-color: #f0f;
+  }
+  li {
+    border-bottom: 1px solid #ddd;
+  }
+</style>
+<body>
+<header><a href="/">Go to home</a><br></header>
+<article>
+{{ content }}
+</article>
+<footer>Yu Chemmings</footer>
+</body>
+</html> 

@@ -1,0 +1,15 @@
+---
+---
+<p>Hello everyone, my name is Yu Chemmings, and this is my personal website. I hope you like it.</p>
+<h3>Below is my portfolio in assorted works, arranged by number.</h3>
+<ul>
+{% for counter in (0..30) %}
+    <li>
+      <a href="articles/{{ counter | times:25}}.html">{{ counter | times:25 }}</a>
+      <a href="articles/{{ counter | times:25 | plus:5 }}.html">{{ counter | times:25 | plus:5 }}</a>
+      <a href="articles/{{ counter | times:25 | plus:10 }}.html">{{ counter | times:25 | plus:10 }}</a>
+      <a href="articles/{{ counter | times:25 | plus:15 }}.html">{{ counter | times:25 | plus:15 }}</a>
+      <a href="articles/{{ counter | times:25 | plus:20 }}.html">{{ counter | times:25 | plus:20 }}</a>
+    </li>
+{% endfor %}
+</ul>
