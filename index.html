@@ -5,7 +5,10 @@
 <ul>
 {% for counter in (0..107) %}
     <li>
-      <a href="articles/{{ counter | times:100}}.html">{{ counter | times:100 }}</a>
+      <a href="articles/{{ counter | times:100 }}.html">{{ counter | times:100 }}</a>
+      <a href="articles/{{ counter | times:100 | plus:25 }}.html">{{ counter | times:100 | plus:25 }}</a>
+      <a href="articles/{{ counter | times:100 | plus:50 }}.html">{{ counter | times:100 | plus:50 }}</a>
+      <a href="articles/{{ counter | times:100 | plus:75 }}.html">{{ counter | times:100 | plus:75 }}</a>
     </li>
 {% endfor %}
 </ul>
